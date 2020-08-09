@@ -3,7 +3,6 @@ package main
 import (
 	crand "crypto/rand"
 	"database/sql"
-	"encoding/json"
 	"fmt"
 	"html/template"
 	"io/ioutil"
@@ -16,6 +15,7 @@ import (
 	"time"
 
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/goccy/go-json"
 	"github.com/gorilla/sessions"
 	"github.com/jmoiron/sqlx"
 	goji "goji.io"
